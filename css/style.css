@@ -36,12 +36,47 @@ ul{
     background: var(--bg-black-900);
     min-height: 100vh;
     display: black;
-    position: fixed;
-    left: 270px;
-    right: 0;
-    top:0;
+    padding: 0 30px;
     opacity: 1;
-    z-index: 0;
+}
+.main-content{
+    padding-left: 270px;
+}
+
+.padd-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    background: var(--skin-color);
+    transition: all 0,3s ease;
+    border: none;
+}
+
+.btn:hover{
+    transform: scale(1.05);
 }
 
 .aside{
@@ -77,7 +112,7 @@ ul{
 
 .aside .logo a span {
     font-family: 'Clicker Script', cursive;
-    font-family: 40px;
+    font-size: 40px;
 }
 
 .aside .logo a::before{
@@ -169,4 +204,80 @@ ul{
 
 .aside .nav li a i{
     margin-right: 15px;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    color: var(--text-black-900);
+}
+
+.home .home-info{
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+h3.hello{
+    font-size: 30px;
+    margin: 15px 0;
+} 
+
+h3.hello span{
+    font-family:'Clicker Script', cursive ;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--skin-color);
+}
+
+h3.my-profission{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.typing{
+    color: var(--skin-color);
+}
+
+.home-info p{
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--text-black-700);
+}
+
+.home .home-img{
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.home-img::after{
+    content: '';
+    /* background: red; */
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: -10px;
+    bottom: 90px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+}
+
+.home-img::before{
+    /* background: red; */
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 0px;
+    top: -40px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+}
+
+
+.home .home-img img{
+    height: 400px;
+    margin: auto;
+    border-radius: 5px;
 }
