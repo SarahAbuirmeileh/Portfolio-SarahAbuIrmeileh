@@ -271,6 +271,7 @@ ul{
 .home .home-info{
     flex: 0 0 60%;
     max-width: 60%;
+    text-align: justify;
 }
 
 h3.hello{
@@ -341,7 +342,7 @@ h3.my-profission{
 .about .about-content{
     flex: 0 0 100%;
     max-width: 100%;
-
+    text-align: justify;
 }
 
 .about .about-content .about-text{
@@ -538,11 +539,16 @@ h3.my-profission{
     padding-bottom: 40px;
 }
 
+.service .container .row h2{
+    margin-top: -15px;
+    margin-bottom: 15px;
+    color: var(--text-black-700);
+}
+
 .service .service-item{
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
-
 }
 
 .service .service-item .service-item-inner{
@@ -552,7 +558,6 @@ h3.my-profission{
     padding: 30px 15px;
     text-align: center;
     transform: all 0.35 ease;
-
 }
 
 .service .service-item .service-item-inner:hover{
