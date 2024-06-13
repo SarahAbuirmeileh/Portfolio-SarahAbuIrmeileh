@@ -367,14 +367,14 @@ h3.my-profission{
 }
 
 .about .about-content .personal-info{
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 37%;
+    max-width: 37%;
     margin-top: 40px;
 }
 
 .about .about-content .personal-info .info-item{
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 .about .about-content .personal-info .info-item p{
@@ -402,14 +402,14 @@ h3.my-profission{
 }
 
 .about .about-content .skills{
-    flex: 0 0 40%;
-    max-width: 40%;
-    margin-top: 40px;
+    flex: 0 0 63%;
+    max-width: 63%;
+    margin-top: 50px;
 }
 
 .about .about-content .skills .skill-item{
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
 .about .about-content .skills .skill-item h5{
@@ -481,7 +481,7 @@ h3.my-profission{
 .about .about-content .timeline .timeline-item{
     position: relative;
     padding-left: 37px;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
 }
 
 .about .about-content .timeline .timeline-item:last-child{
@@ -522,7 +522,7 @@ h3.my-profission{
 .about .about-content .timeline .timeline-title{
     font-weight: 700;
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     text-transform: capitalize;
     color: var(--text-black-900);
 }
