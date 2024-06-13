@@ -301,42 +301,54 @@ h3.my-profission{
     color: var(--text-black-700);
 }
 
-.home .home-img{
+.home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
     position: relative;
 }
 
-.home-img::after{
+.home-img::after {
     content: '';
-    /* background: red; */
     position: absolute;
     height: 80px;
     width: 80px;
-    right: -10px;
-    bottom: 90px;
+    right: -30px;
+    bottom: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
 }
 
-.home-img::before{
-    /* background: red; */
+.home-img::before {
     content: '';
     position: absolute;
     height: 80px;
     width: 80px;
-    left: 0px;
-    top: -40px;
+    left: 25px;
+    top: -10px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
 }
 
-
-.home .home-img img{
+.home .home-img img {
+    position: relative;
+    z-index: 2;
     height: 400px;
     margin: auto;
     border-radius: 5px;
+}
+
+.half-circle {
+    position: absolute;
+    top: 55%;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 420px;
+    height: 225px;
+    background-color: var(--skin-color);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
 }
 
 .about .about-content{
