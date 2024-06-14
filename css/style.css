@@ -308,7 +308,7 @@ h3.hello span{
 }
 
 h3.my-profission{
-    font-size: 28px;
+    font-size: 24px;
     margin: 15px 0;
 }
 
@@ -334,8 +334,8 @@ h3.my-profission{
     position: absolute;
     height: 80px;
     width: 80px;
-    right: -30px;
-    bottom: 80px;
+    right: -40px;
+    bottom: 147px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
 }
@@ -345,8 +345,8 @@ h3.my-profission{
     position: absolute;
     height: 80px;
     width: 80px;
-    left: 25px;
-    top: -10px;
+    left: 20px;
+    top: 0px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
 }
@@ -361,11 +361,11 @@ h3.my-profission{
 
 .half-circle {
     position: absolute;
-    top: 55%;
-    left: 52.5%;
+    top: 47.4%;
+    left: 52.8%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    width: 420px;
+    width: 423.5px;
     height: 225px;
     background-color: var(--skin-color);
     border-top-left-radius: 200px;
@@ -715,6 +715,15 @@ h3.my-profission{
 .contact .contact-info-item .icon .fa{
     font-size: 30px;
     color: var(--skin-color);
+}
+
+.contact .contact-info-item .icon  .fa-github,
+.contact .contact-info-item .icon .fa-medium {
+    color: black;
+}
+
+.contact .contact-info-item .icon .fa-linkedin{
+    color: #0a66c2;
 }
 
 .contact .contact-info-item h4{
