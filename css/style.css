@@ -16,12 +16,16 @@ body.dark{
     --text-black-700:#e9e9e9;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    font-size: 16px;
-    font-family: 'Poppins' sans-serif;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 
 *{
@@ -125,9 +129,26 @@ ul{
     background: var(--skin-color);
     transition: all 0,3s ease;
     border: none;
+    transition: 0.3s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .btn:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.outlined-btn {
+    font-size: 15px;
+    background: transparent;
+    color: var(--skin-color);
+    border: 2px solid var(--skin-color);
+}
+
+.outlined-btn:hover {
+    background: var(--skin-color);
+    color: white;
     transform: scale(1.05);
 }
 
@@ -547,62 +568,70 @@ h3.my-profission{
     color: var(--text-black-700);
 }
 
-.service .container{
+.service .container {
     padding-bottom: 40px;
 }
 
-.service .container .row h2{
+.service .container .row h2 {
     margin-top: -15px;
     margin-bottom: 15px;
     color: var(--text-black-700);
 }
 
-.service .service-item{
+.service .service-item {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
+    opacity: 0;
+    animation: fadeInEase 1s ease-in-out forwards;
 }
 
-.service .service-item .service-item-inner{
+@keyframes fadeInEase {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service .service-item .service-item-inner {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
-    transform: all 0.35 ease;
+    transition: all 0.35s ease;
 }
 
-.service .service-item .service-item-inner:hover{
+.service .service-item .service-item-inner:hover {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-.service .service-item .service-item-inner .icon{
+.service .service-item .service-item-inner .icon {
     height: 60px;
     width: 60px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 30px;
     text-align: center;
-    transform: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner .icon .fa{
+.service .service-item .service-item-inner .icon .fa {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
-    transform: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .service .service-item .service-item-inner:hover .icon {
-    background: var(--skin-color);
+    animation: fadeInEase 1s ease-in-out forwards;
 }
 
-.service .service-item .service-item-inner:hover .icon .fa{
-    font-size: 25px;
-    color: #ffffff;
-}
-
-.service .service-item .service-item-inner h4{
+.service .service-item .service-item-inner h4 {
     font-size: 18px;
     margin-bottom: 15px;
     color: var(--text-black-900);
@@ -610,7 +639,7 @@ h3.my-profission{
     text-transform: capitalize;
 }
 
-.service .service-item .service-item-inner p{
+.service .service-item .service-item-inner p {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
