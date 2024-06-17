@@ -401,9 +401,10 @@ h3.my-profission{
 }
 
 .about .about-content .personal-info{
-    flex: 0 0 37%;
-    max-width: 37%;
+    flex: 0 0 42%;
+    max-width: 42%;
     margin-top: 40px;
+    margin-right: 10px;
 }
 
 .about .about-content .personal-info .info-item{
@@ -414,7 +415,7 @@ h3.my-profission{
 .about .about-content .personal-info .info-item p{
     font-weight: 600;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 15px;
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
 }
@@ -436,8 +437,8 @@ h3.my-profission{
 }
 
 .about .about-content .skills{
-    flex: 0 0 63%;
-    max-width: 63%;
+    flex: 0 0 57%;
+    max-width: 57%;
     margin-top: 50px;
 }
 
